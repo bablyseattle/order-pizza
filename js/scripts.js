@@ -5,7 +5,7 @@ function arraySum(array){
 	},0);
 	return sum;
 }
-function Pizza(size,quantity){
+function Pizza(size, quantity){
 	this.size = size;
 	this.quantity = quantity;
 	this.toppings =[];
@@ -22,7 +22,7 @@ Pizza.prototype.cost = function(){
 		pizzaCost = baseCost * 1.3 + toppingCost * 1.5;
 	}
 	else{
-		pizzaCost = baseCost * 1.9 + toppingCost * 2.0;
+		pizzaCost = baseCost * 1.9 + toppingCost * 2;
 	}
 	return pizzaCost * noOfPizza;
 }
@@ -33,13 +33,13 @@ $(document).ready(function(){
 	$("form").submit(function(e){
 		e.preventDefault();
 		var toppingsInput = [];
-		var quantity = $("#quantity").val();
+		var quantityInput = parseInt($("#quantity").val());
 		var inputSize = $("input:radio[name=size]:checked").val();
 		$("input:checkbox[name=topping]:checked").each(function(){
 			toppingsInput.push(parseInt($(this).val()));
 			
 		});
-		var myPizza = new Pizza(inputSize,quantity);
+		var myPizza = new Pizza(inputSize, quantityInput);
 		myPizza.toppings = toppingsInput;
 		$("#cost").text(myPizza.cost());
 		

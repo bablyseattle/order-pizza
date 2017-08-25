@@ -13,17 +13,17 @@
 				<h1>Pizza Hut</h1>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-9">
 					<form id="formInput">
 						<h2>Make your own Pizza</h2>
 						<h3> Quantity:</h3>
-						<select class="form-control" id="beverage">
+						<select class="form-control" id="quantity">
 						  <option value="1">1</option>
 						  <option value="2">2</option>
 						  <option value="3">3</option>
 						  <option value="4">4</option>
 						</select>
-						<h3>Choose size:</h3>
+						<h3>Choose base size: <span class ="addCost">small $10</span><span class ="addCost">Medium $13</span><span class ="addCost">Large $15</span></h3></h3>
 						 <div class="radio">
 						  <label>
 						    <input type="radio" name="size" value="small" checked>
@@ -42,35 +42,40 @@
 						    Large
 						  </label>
 						</div>
-						<h3>Choose toppings:</h3>
+						<h3>Choose veggies:  <span class ="addCost">small +$1</span><span class ="addCost">Medium +$1.5</span><span class ="addCost">Large +$2</span></h3>
 						 <div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="1">Onion   +$1</label>
+						  <label><input type="checkbox" name="topping" value="1">Onion</label>
 						</div>
 						<div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="1">Mushroom  +$1</label>
+						  <label><input type="checkbox" name="topping" value="1">Mushroom</label>
 						</div>
 						<div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="1" >Pineapple  +$1</label>
+						  <label><input type="checkbox" name="topping" value="1" >Pineapple</label>
 						</div> 
 						<div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="1" >Jalepeno  +$1</label>
+						  <label><input type="checkbox" name="topping" value="1" >Jalepeno</label>
+						</div> 
+						<h3>Choose Meat:  <span class ="addCost">small +$2</span><span class ="addCost">Medium +$3</span><span class ="addCost">Large +$4</span></h3>
+						<div class="checkbox">
+						  <label><input type="checkbox" name="topping" value="2" >Chicken</label>
 						</div> 
 						<div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="2" >Chicken  +$2</label>
+						  <label><input type="checkbox" name="topping" value="2" >Pork</label>
 						</div> 
 						<div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="2" >Pork  +$2</label>
+						  <label><input type="checkbox" name="topping" value="2" >Beef</label>
+						</div> 
+						<h3>Choose Seafood:  <span class ="addCost">small +$3</span><span class ="addCost">Medium +$4.5</span><span class ="addCost">Large +$6</span></h3>
+						<div class="checkbox">
+						  <label><input type="checkbox" name="topping" value="3" >Shrimp</label>
 						</div> 
 						<div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="3" >Beef  +$3</label>
-						</div> 
-						<div class="checkbox">
-						  <label><input type="checkbox" name="topping" value="4" >Shrimp  +$4</label>
+						  <label><input type="checkbox" name="topping" value="3" >Salmon</label>
 						</div> 
 						<button type ="submit">Make</button>
 					</form>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-3">
 					<div class="result">
 						<p id="cost"></p>
 					</div>
