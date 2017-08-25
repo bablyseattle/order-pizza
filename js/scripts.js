@@ -42,6 +42,9 @@ $(document).ready(function(){
 		var myPizza = new Pizza(inputSize, quantityInput);
 		myPizza.toppings = toppingsInput;
 		$("#cost").text(myPizza.cost());
+		$(".quantityOutput").text(myPizza.quantity);
+		$(".sizeOutput").text(myPizza.size);
+		$(".toppingsOutput").text(myPizza.toppings);
 		$("#formInput").slideToggle();
 		$(".result").slideToggle();
 	});

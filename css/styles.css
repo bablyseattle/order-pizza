@@ -26,7 +26,7 @@ body {
 	font-size: 20px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	animation: bg 15s linear infinite ;
+	animation: bg 12s linear infinite ;
 	}
 	@keyframes bg{
 	  0%{
@@ -36,7 +36,7 @@ body {
 	    background-position-y: 100%;
 	  }
 }
-.jumbotron{
+.jumbotron {
     position: relative;
     padding:20px !important;
     margin-top:70px !important;
@@ -67,12 +67,13 @@ body {
 
     display: inline-block;
 
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 2px;
 
-    animation: rotate-horizontal 1.5s linear infinite,
-            blinker 0.1s linear infinite,
-            color-changer 1s linear infinite;
+    animation: rotate-horizontal 2s linear,
+            blinker 2s linear infinite,
+            color-changer 10s linear infinite;
+      
 }
 
 @-webkit-keyframes color-changer {
