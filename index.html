@@ -11,11 +11,12 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1>Pizza Hut</h1>
+				<!-- <h2>Americas' favorite pizza</h2> -->
 			</div>
-			<div class="row">
-				<div class="col-md-9">
+			<!-- <div class="row">
+				<div class="col-md-7"> -->
 					<form id="formInput">
-						<h2>Make your own Pizza</h2>
+						<h3>Make your own Pizza</h3>
 						<h3> Quantity:</h3>
 						<select class="form-control" id="quantity">
 						  <option value="1">1</option>
@@ -42,8 +43,8 @@
 						    Large
 						  </label>
 						</div>
-						<h3>Choose veggies:  <span class ="addCost">small +$1</span><span class ="addCost">Medium +$1.5</span><span class ="addCost">Large +$2</span></h3>
-						 <div class="checkbox">
+						<h3>Choose your veggies:  <span class ="addCost">small +$1</span><span class ="addCost">Medium +$1.5</span><span class ="addCost">Large +$2</span></h3>
+						<div class="checkbox">
 						  <label><input type="checkbox" name="topping" value="1">Onion</label>
 						</div>
 						<div class="checkbox">
@@ -74,13 +75,14 @@
 						</div> 
 						<button type ="submit">Make</button>
 					</form>
-				</div>
-				<div class="col-md-3">
+				<!-- </div>
+				<div class="col-md-5"> -->
 					<div class="result">
-						<p id="cost"></p>
+						<img src="img/mypizza.gif">
+						<p class="fancy"> Your total is $<span id="cost"></span></p>
 					</div>
-				</div>
-			</div>
+				<!-- </div>
+			</div> -->
 		</div>
 	</body>
 </html>

@@ -1,6 +1,37 @@
+.col-md-7 {
+	float: left;
+}
 .col-md-5 {
 	float: left;
 }
-.col-md-6 {
-	float: left;
+.addCost {
+	border-radius:4px;
+	margin-left: 14px;
+	margin-right: 14px;
+	background:#cecece;
+	padding:0 8px;
+	  -webkit-font-smoothing: antialiased;
+		-moz-font-smoothing:antialiased;
+	  color:#555;
+	font-weight:bold;
+	font-size: 20px;
 }
+body {
+background:url('../img/pizza.gif');
+font-family:serif;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.jumbotron{
+    position: relative;
+    padding:10px !important;
+    margin-top:70px !important;
+    margin-top: 23px;
+    text-align:center;
+    margin-bottom: 0 !important;
+    background-image: url("../veg.png");
+}
+.result {
+	display: none;
+}
+

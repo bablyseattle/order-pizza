@@ -42,7 +42,8 @@ $(document).ready(function(){
 		var myPizza = new Pizza(inputSize, quantityInput);
 		myPizza.toppings = toppingsInput;
 		$("#cost").text(myPizza.cost());
-		
+		$("#formInput").slideToggle();
+		$(".result").slideToggle();
 	});
 
 });
