@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pizza Hut</title>
-</head>
-<body>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Pizza Hut</h1>
+	<head>
+	    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	    <script src="js/jquery-3.2.1.js"></script>
+	    <script src="js/scripts.js"></script>
+		<title>Pizza Hut</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Pizza Hut</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<form id="formInput">
+						<h2>Make your own Pizza</h2>
+						<h3>Choose size:</h3>
+						 <div class="radio">
+						  <label>
+						    <input type="radio" name="size" value="small" checked>
+						    Small
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="size" value="medium">
+						    Medium
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="size" value="large">
+						    Large
+						  </label>
+						</div>
+						<h3>Choose toppings:</h3>
+						 <div class="checkbox">
+						  <label><input type="checkbox" value="1">Onion   +$1</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="1">Mushroom  +$1</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="1" >Pineapple  +$1</label>
+						</div> 
+						<div class="checkbox">
+						  <label><input type="checkbox" value="1" >Jalepeno  +$1</label>
+						</div> 
+						<div class="checkbox">
+						  <label><input type="checkbox" value="2" >Chicken  +$2</label>
+						</div> 
+						<div class="checkbox">
+						  <label><input type="checkbox" value="2" >Pork  +$2</label>
+						</div> 
+						<div class="checkbox">
+						  <label><input type="checkbox" value="3" >Beef  +$3</label>
+						</div> 
+						<div class="checkbox">
+						  <label><input type="checkbox" value="4" >Shrimp  +$4</label>
+						</div> 
+					</form>
+				</div>
+			</div>
 		</div>
-		<h2>Order pizza here </h2>
-	</div>
-
-</body>
+	</body>
 </html>
